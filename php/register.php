@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+<<<<<<< HEAD
 
     if (!preg_match("/^[A-Za-zА-Яа-яЁё]+$/u", $name)) {
         echo json_encode(array('success' => false, 'message' => 'Имя пользователя может содержать только буквы кириллицы и латиницы'));
@@ -45,5 +46,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(array('success' => false, 'message' => 'Произошла ошибка при регистрации'));
         exit();
     }
+=======
+    
+    // Хэширование пароля
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    
+    // Подготовленный запрос для добавления пользователя
+    $stmt = $pdo->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
+    $stmt->execute([$name, $email, $hashed_password]);
+
+// Устанавливаем сессию для нового пользователя
+    $_SESSION['user_id'] = $pdo->lastInsertId();
+    $_SESSION['username'] = $name; // Устанавливаем имя пользователя в сессию
+
+    header("Location: ../index.php");
+    exit();
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
 ?>

@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 session_start();
 require_once('php/db_config.php');
 
@@ -26,6 +27,14 @@ if(isset($_SESSION['user_id'])) {
     } else {
         $username = "Unknown"; 
     }
+=======
+session_start(); // Подключаем файл сессии
+
+// Проверяем наличие информации о пользователе в сессии
+if(isset($_SESSION['username'])) {
+    $avatar = "path/to/avatar.jpg"; // Путь к аватарке пользователя
+    $username = $_SESSION['username']; // Имя пользователя
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
 ?>
 <!DOCTYPE html>
@@ -36,22 +45,38 @@ if(isset($_SESSION['user_id'])) {
     <title>Уроки по гитаре</title>
     <link rel="stylesheet" href="css/index.css"> 
     <link rel="shortcut icon" href="img/guitar_music_6159.ico" type="image/x-icon">
+<<<<<<< HEAD
     <script src="https:
 
     <script src="js/scroll.js" defer></script>
+=======
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     <script src="js/index.js" defer></script>
     <style>
     .user-container {
     position: absolute;
+<<<<<<< HEAD
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+=======
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%); 
+    
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     
     padding: 10px 20px; 
     border: none; 
     border-radius: 5px; 
+<<<<<<< HEAD
     
     font-size: 16px;
+=======
+    cursor: pointer; 
+    font-size: 16px;
+    
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
 
 .user-profile {
@@ -72,6 +97,7 @@ if(isset($_SESSION['user_id'])) {
     margin-right: 5px;
 }
     </style>
+<<<<<<< HEAD
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('registerBtn').addEventListener('click', function() {
@@ -99,6 +125,8 @@ if(isset($_SESSION['user_id'])) {
             });
         });
     </script>
+=======
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 </head>
 <body>
 <header>
@@ -111,6 +139,7 @@ if(isset($_SESSION['user_id'])) {
             </ul>
         </div>
         <div class="user-container">
+<<<<<<< HEAD
         <?php if(isset($_SESSION['username'])): ?>
             <div class="user-profile">
             <a id="link-bio" href="profile.php"><span class="user-name"><?php echo $username; ?></span></a>
@@ -120,11 +149,27 @@ if(isset($_SESSION['user_id'])) {
         <?php else: ?>
             <button id="registerBtn" class="btn-reg">Регистрация/Вход</button>
         <?php endif; ?>
+=======
+            <?php if(isset($_SESSION['username'])): ?>
+                <div class="user-profile">
+                    <span class="user-name"><?php echo $username; ?></span>
+                    <img class="user-avatar" src="<?php echo $avatar; ?>">
+                    
+                </div>
+                <a href="php/logout.php" class="logout-btn">Выход</a>
+            <?php else: ?>
+                <button id="registerBtn" class="btn-reg">Регистрация/Вход</button>
+            <?php endif; ?>
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
         </div>
         
     </nav>
 </header>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     <section id="главная">
         <h1>Уроки по гитаре</h1>
         <p>Добро пожаловать на сайт с уроками по игре на гитаре! Наш сайт предлагает широкий спектр уроков для начинающих и опытных гитаристов.</p>
@@ -178,7 +223,11 @@ if(isset($_SESSION['user_id'])) {
         <p>Если у вас есть какие-либо вопросы или предложения, свяжитесь с нами:</p>
         <div class="contacts-container">  
             <div class="contact-item">
+<<<<<<< HEAD
                 <iframe src="https:
+=======
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716096975!3d59.93871648187822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x406c578330d04ee8!2z0L_Quy4g0KPRgNCw0LrQuNC5INCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCz!5e0!3m2!1sru!2sru!4v1603996830364!5m2!1sru!2sru" 
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
                     width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <ul>
                     <li>Телефон: +7 123 456 789</li>
@@ -186,15 +235,26 @@ if(isset($_SESSION['user_id'])) {
                 </ul>
             </div>
             <div class="contact-item">
+<<<<<<< HEAD
                 <iframe src="https:
+=======
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.1079407686307!2d37.57918206141373!3d55.66966014131359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cc905323947%3A0xc7022e51723732d5!2z0KbQtdC90YLRgCDQtNC40LfQsNC50L3QsCDQuCDQuNC90YLQtdGA0YzQtdGA0LAgRXhwb3N0cm95!5e0!3m2!1sru!2sru!4v1699640521015!5m2!1sru!2sru"
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
                     width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <ul>
                     <li>Телефон: +7 154 455 786</li>
                     <li>Email: info@example.com</li>
                 </ul>
+<<<<<<< HEAD
             </div>
             <div class="contact-item">
                 <iframe src="https:
+=======
+                
+            </div>
+            <div class="contact-item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1429.145904583548!2d37.49565658556074!3d55.72562706454356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c046f98873b%3A0xa102c018bbde450d!2z0JbQuNC70L7QuSDQutC-0LzQv9C70LXQutGBIFdlc3RTaWRl!5e0!3m2!1sru!2sru!4v1699640609093!5m2!1sru!2sru"
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
                     width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <ul>
                     <li>Телефон: +7 987 556 889</li>
@@ -208,6 +268,7 @@ if(isset($_SESSION['user_id'])) {
         <p>© 2023 Уроки по гитаре. Все права защищены.</p>
     </footer>
     <div id="registerModal" class="modal">
+<<<<<<< HEAD
     <div class="modal-content">
         
         <div class="switcher">
@@ -249,6 +310,43 @@ if(isset($_SESSION['user_id'])) {
     </div>
 </div>
 
+=======
+        <div class="modal-content">
+            
+            <div class="switcher">
+                <a href="#" id="switchToRegistration" class="nav-link">Зарегистрируйтесь</a></p>
+                <span class="separator">или</span>
+                <a href="#" id="switchToLogin" class="nav-link">Войдите</a></p>
+                <span class="close">&times;</span>
+            </div>
+            
+            
+            <div id="registerForm">
+                
+                <form action="php/register.php" id="registrationForm" method="post">
+                    <input type="text" placeholder="Имя" name="name" required><br>
+                    <input type="text" placeholder="Email" name="email" required><br>
+                    <input type="password" placeholder="Пароль" name="password" required><br>
+                    <button class="reg-butt" type="submit">Зарегистрироваться</button><br>
+                </form>
+                <div id="error-message" style="
+                color: red; margin-top: 10px;
+                font-size: 25;
+                font-weight: 600;
+                "></div>
+            </div>
+            <div id="loginForm" style="display:none;">
+                
+                <form action="php/login.php" id="loginForm" method="post">
+                    <input type="email" placeholder="Email" name="email" required><br>
+                    <input type="password" placeholder="Пароль" name="password" required><br>
+                    <button class="log-butt" type="submit">Войти</button><br>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+>>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     
 </body>
 </html>
