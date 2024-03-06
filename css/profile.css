@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1d1d1;
+    color: #333;
+}
+
+header {
+    background-color: #8bc1fc;
+    color: white;
+    padding: 20px;
+    
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #8bc1fc;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-info {
+    width: 30%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+}
+
+
+.profile-info h2 {
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.user-info strong {
+    font-weight: bold;
+}
+
+
+.user-avatar{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    
+    
+}
+
+
+#changeAvatarBtn {
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-top: 10px;
+}
+
+#changeAvatarBtn:hover {
+    background-color: #0056b3; 
+}
+
+#changeUsernameBtn{
+    margin-top: 10px;
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#changeUsernameBtn:hover {
+    background-color: #0056b3; 
+}
+
+#goback{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+#goback:hover{
+    color: #f71e1e;
+}
