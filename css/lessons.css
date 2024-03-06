@@ -24,17 +24,12 @@ header {
 
 nav {
     position: relative;
-<<<<<<< HEAD
     
-=======
-     /* Добавляем для flex-контейнера */
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     justify-content: space-between;
 }
 
 nav {
     display: flex;
-<<<<<<< HEAD
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -42,15 +37,6 @@ nav {
 
 .menu-container {
     flex-grow: 2;
-=======
-    justify-content: space-between; /* Это разместит элементы (меню и кнопку) по краям контейнера */
-    align-items: center;
-    width: 100%; /* Добавили выравнивание по вертикали */
-}
-
-.menu-container {
-    flex-grow: 2; /* Это позволит меню занимать всё доступное пространство */
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     text-align: center;
 }
 
@@ -70,11 +56,7 @@ nav {
 }
 
 
-<<<<<<< HEAD
 #registerBtnLesson {
-=======
-#registerBtn {
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     position: absolute;
     top: 50%; 
     right: 20px; 
@@ -254,11 +236,8 @@ section h2 {
     animation: fadeIn 0.5s ease forwards; 
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 .lesson img {
     max-width: 600px;
     height: auto;
@@ -286,11 +265,7 @@ section h2 {
     font-weight: 800;
 }
 
-<<<<<<< HEAD
 @keyframes fadeIn {
-=======
-@keyframes fadeIn { /* добавлено */
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -325,7 +300,6 @@ section h2 {
     background: darkred;
 }
 
-<<<<<<< HEAD
 
 .courses-container {
     display: flex;
@@ -386,8 +360,6 @@ section h2 {
     background-color: #0056b3;
 }
 
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 footer {
     text-align: center;
     margin-top: 40px;
@@ -404,7 +376,6 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.6); 
     animation: fadeIn 0.5s ease; 
 }
@@ -440,8 +411,6 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     background-color: rgba(0,0,0,0.4);
     transition: opacity 0.3s ease; 
 }
@@ -631,11 +600,7 @@ footer {
 
 .form-container form {
     display: none;
-<<<<<<< HEAD
     transition: opacity 0.3s ease;
-=======
-    transition: opacity 0.3s ease; /* Добавляем переход для свойства opacity */
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
 
 .reg-butt{
@@ -665,7 +630,6 @@ footer {
 
 #registrationForm, #loginForm{
     text-align: center;
-<<<<<<< HEAD
 }
 
 #link-bio{
@@ -692,6 +656,4 @@ footer {
 .logout-btn:hover{
         background-size: 100% 2px;
       
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }

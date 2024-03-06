@@ -24,17 +24,12 @@ header {
 
 nav {
     position: relative;
-<<<<<<< HEAD
     
-=======
-     /* Добавляем для flex-контейнера */
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     justify-content: space-between;
 }
 
 nav {
     display: flex;
-<<<<<<< HEAD
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -42,15 +37,6 @@ nav {
 
 .menu-container {
     flex-grow: 2;
-=======
-    justify-content: space-between; /* Это разместит элементы (меню и кнопку) по краям контейнера */
-    align-items: center;
-    width: 100%; /* Добавили выравнивание по вертикали */
-}
-
-.menu-container {
-    flex-grow: 2; /* Это позволит меню занимать всё доступное пространство */
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     text-align: center;
 }
 
@@ -76,10 +62,7 @@ nav {
     top: 50%; 
     right: 20px; 
     transform: translateY(-50%); 
-<<<<<<< HEAD
     
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     background-color: #ff6347; 
     color: white; 
     padding: 20px 20px; 
@@ -254,13 +237,10 @@ section {
     align-items: start; 
 }
 
-<<<<<<< HEAD
 #контакты h2{
     font-size: 28px;
 }
 
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 .contact-item {
     padding: 20px;
     box-sizing: border-box;
@@ -313,11 +293,8 @@ section {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-<<<<<<< HEAD
     min-height: 300px; 
     overflow-y: auto;
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     animation: slideIn 0.5s ease; 
     text-align: center;
 }
@@ -482,11 +459,7 @@ footer {
 
 .form-container form {
     display: none;
-<<<<<<< HEAD
     transition: opacity 0.3s ease;
-=======
-    transition: opacity 0.3s ease; /* Добавляем переход для свойства opacity */
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
 
 .reg-butt{
@@ -512,7 +485,6 @@ footer {
 .form-container form.active {
     display: block;
     opacity: 1;
-<<<<<<< HEAD
 }
 
 #link-bio{
@@ -539,6 +511,4 @@ footer {
 .logout-btn:hover{
         background-size: 100% 2px;
       
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
