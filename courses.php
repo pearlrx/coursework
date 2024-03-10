@@ -37,7 +37,7 @@ if(isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="css/courses.css">
     <link rel="shortcut icon" href="img/guitar_music_6159.ico" type="image/x-icon">
     <script src="js/lesson.js" defer></script>
-    <script src="https:
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous" defer></script>
     <script src="js/scroll.js" defer></script>
     <script src="js/index.js" defer></script>
     <script src="js/modal-bank.js" data-isloggedin="<?php echo isset($_SESSION['username']) ? 'true' : 'false'; ?>" defer></script>
@@ -125,19 +125,19 @@ if(isset($_SESSION['user_id'])) {
         <main>
     <div class="course-container">
         <h2>Базовый курс</h2>
-        <p>Основные принципы игры на гитаре</p>
+        <p>Основные принципы игры на инструментах</p>
         <p class="price">1500 р/месяц</p>
         <a href="#" class="buy-course" data-course-id="1">Купить курс</a>
     </div>
     <div class="course-container">
         <h2>Средний курс</h2>
-        <p>Расширенные техники игры на гитаре</p>
+        <p>Расширенные техники игры на иструментах</p>
         <p class="price">3000 р/месяц</p>
         <a href="#" class="buy-course" data-course-id="2">Купить курс</a>
     </div>
     <div class="course-container">
         <h2>Углубленный курс</h2>
-        <p>Продвинутые темы и тренировки для опытных гитаристов</p>
+        <p>Продвинутые темы и тренировки для опытных музыкантах</p>
         <p class="price">4500 р/месяц</p>
         <a href="#" class="buy-course" data-course-id="3">Купить курс</a>
     </div>

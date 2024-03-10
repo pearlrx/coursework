@@ -106,3 +106,78 @@ footer {
 #goback:hover{
     color: #f71e1e;
 }
+.course-info{
+    margin-top: 50px;
+}
+
+
+
+
+.course-container-base {
+    background: linear-gradient(135deg, var(--gradient-start-color), var(--gradient-end-color));
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto; /* Добавлено для выравнивания по центру */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    --gradient-start-color: #3498db;
+    --gradient-end-color: #8e44ad;
+}
+
+.course-container-middle {
+    --gradient-start-color: #e74c3c;
+    --gradient-end-color: #9b59b6;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto; /* Добавлено для выравнивания по центру */
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--gradient-start-color), var(--gradient-end-color));
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.course-container-ugl {
+    --gradient-start-color: #1abc9c;
+    --gradient-end-color: #f39c12;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto; /* Добавлено для выравнивания по центру */
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--gradient-start-color), var(--gradient-end-color));
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.course-container p {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+.course-container h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.course-container a {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.course-container a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}

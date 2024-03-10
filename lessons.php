@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 session_start();
 require_once('php/db_config.php');
 
@@ -27,14 +26,6 @@ if(isset($_SESSION['user_id'])) {
     } else {
         $username = "Unknown"; 
     }
-=======
-session_start(); // Подключаем файл сессии
-
-// Проверяем наличие информации о пользователе в сессии
-if(isset($_SESSION['username'])) {
-    $avatar = "path/to/avatar.jpg"; // Путь к аватарке пользователя
-    $username = $_SESSION['username']; // Имя пользователя
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
 ?>
 <!DOCTYPE html>
@@ -45,15 +36,11 @@ if(isset($_SESSION['username'])) {
     <title>Уроки по гитаре</title>
     <link rel="stylesheet" href="css/lessons.css">
     <link rel="shortcut icon" href="img/guitar_music_6159.ico" type="image/x-icon">
-<<<<<<< HEAD
     
     <script src="js/modal.js" defer></script>
     <script src="js/lesson.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous" defer></script>
     <script src="js/scroll.js" defer></script>
-=======
-    <script src="js/lesson.js" defer></script>
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
     <style>
     .user-container {
     position: absolute;
@@ -65,7 +52,7 @@ if(isset($_SESSION['username'])) {
     padding: 10px 20px; 
     border: none; 
     border-radius: 5px; 
-    cursor: pointer; 
+    
     font-size: 16px;
     
 }
@@ -73,10 +60,7 @@ if(isset($_SESSION['username'])) {
 .user-profile {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 }
 
 .user-avatar {
@@ -92,10 +76,7 @@ if(isset($_SESSION['username'])) {
     margin-right: 5px;
 }
     </style>
-<<<<<<< HEAD
     
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 </head>
 <body>
     <header>
@@ -110,20 +91,12 @@ if(isset($_SESSION['username'])) {
             <div class="user-container">
             <?php if(isset($_SESSION['username'])): ?>
                 <div class="user-profile">
-<<<<<<< HEAD
                 <a id="link-bio" href="profile.php"><span class="user-name"><?php echo $username; ?></span></a>
                     <img class="user-avatar" src="<?php echo $avatar; ?>">
                 </div>
                 <a href="php/logout.php" class="logout-btn">Выход</a>
             <?php else: ?>
                 <button id="registerBtnLesson" class="btn-reg">Регистрация/Вход</button>
-=======
-                    <span class="user-name"><?php echo $username; ?></span>
-                    <img class="user-avatar" src="<?php echo $avatar; ?>">
-                </div>
-            <?php else: ?>
-                <button id="registerBtn" class="btn-reg">Регистрация/Вход</button>
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
             <?php endif; ?>
         </div>
         </nav>
@@ -164,34 +137,28 @@ if(isset($_SESSION['username'])) {
     </div>
     
     <div id="lessons-wrapper"> 
-<<<<<<< HEAD
     </div> 
         
     <div class="courses-container">
     <section class="course">
         <h2>Базовый курс</h2>
-        <p>Основные принципы игры на гитаре.</p>
+        <p>Основные принципы игры на инструментах.</p>
         <p class="price">1500 р/месяц</p>
         <a href="courses.php">Купить курс</a>
     </section>
     <section class="course">
         <h2>Средний курс</h2>
-        <p>Расширенные техники игры на гитаре.</p>
+        <p>Расширенные техники игры на инструментах.</p>
         <p class="price">3000 р/месяц</p>
         <a href="courses.php">Купить курс</a>
     </section>
     <section class="course">
         <h2>Углубленный курс</h2>
-        <p>Продвинутые темы и тренировки для опытных гитаристов.</p>
+        <p>Продвинутые темы и тренировки для опытных инструментах.</p>
         <p class="price">4500 р/месяц</p>
         <a href="courses.php">Купить курс</a>
     </section>
 </div>
-=======
-        
-
-    </div> 
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 
     <section id="контакты">
         <h2>Контакты</h2>
@@ -240,7 +207,6 @@ if(isset($_SESSION['username'])) {
             </div>
             
             
-<<<<<<< HEAD
             <div id="registerForm">
                 
                 <form action="php/register.php" id="registrationForm" method="post">
@@ -260,31 +226,12 @@ if(isset($_SESSION['username'])) {
                 <form action="php/login.php" id="loginForm" method="post">
                     <input type="email" placeholder="Email" name="email" required><br>
                     <input type="password" placeholder="Пароль" name="password" required><br>
-=======
-            <div  id="registerForm">
-                
-                <form action="php/register.php" id="registrationForm" method="post">
-                    <input type="text" placeholder="Имя" name="name" required><br>
-                    <input type="email" placeholder="Email" name="email" required><br>
-                    <input type="password" placeholder="Пароль" name="password" required><br>
-                    <button class="reg-butt"  type="submit">Зарегистрироваться</button><br>
-                </form>
-            </div>
-            <div id="loginForm" style="display:none;">
-                
-                <form id="loginForm">
-                    <input type="email" placeholder="Email" required><br>
-                    <input type="password" placeholder="Пароль" required><br>
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
                     <button class="log-butt" type="submit">Войти</button><br>
                 </form>
             </div>
             
         </div>
     </div>
-<<<<<<< HEAD
     </div>
-=======
->>>>>>> dd64a0b6aa1b53727bc286561deadb4b860cdbbd
 </body>
 </html>
