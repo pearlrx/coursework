@@ -44,7 +44,7 @@ if(isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Уроки по гитаре</title>
+    <title>Практикуйтесь!</title>
     <link rel="stylesheet" href="css/index.css"> 
     
     <link rel="shortcut icon" href="img/guitar_music_6159.ico" type="image/x-icon">
@@ -52,9 +52,9 @@ if(isset($_SESSION['user_id'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous" defer></script>
 
     <script src="js/scroll.js" defer></script>
-
+    <script src="js/practice.js" defer></script>
     
-    <script src="js/index.js" defer></script>
+    
     <style>
     .user-container {
     position: absolute;
@@ -159,11 +159,18 @@ if(isset($_SESSION['user_id'])) {
         <?php foreach ($lessons as $lesson): ?>
             <div class="lesson-container">
                 <h2><?php echo $lesson['lesson_title']; ?></h2>
-                <!-- Ссылка, которая открывает модальное окно с видео урока -->
                 <a href="#" class="lesson-video-link" data-video="<?php echo $lesson['lesson_video_link']; ?>">Просмотреть урок</a>
             </div>
         <?php endforeach; ?>
         </main>
     
+
+        <div id="modal" class="modal-lesson">
+  <div class="modal-content-lesson">
+  <h2 class="heading-lesson"><?php echo $lesson['lesson_title']; ?></h2>
+    <iframe  id="videoFrame" width="560" height="315" src="<?php echo $lesson['lesson_video_link']; ?>" frameborder="0" allowfullscreen></iframe>
+    <span class="close-lesson">&times;</span>
+  </div>
+</div>
 </body>
 </html>

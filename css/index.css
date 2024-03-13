@@ -329,6 +329,7 @@ section {
     border: 1px solid #888;
     width: 80%;
     transition: transform 0.3s ease; 
+    text-align: center;
 }
 
 .close {
@@ -511,4 +512,66 @@ footer {
 .logout-btn:hover{
         background-size: 100% 2px;
       
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-content-lesson {
+    background-color: #fefefe;
+    position: absolute;
+    left: 50%;
+    top: 40%; /* Чуть выше центра экрана */
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px; /* Максимальная ширина */
+    max-height: calc(100% - 100px); /* Максимальная высота (высота экрана минус отступы) */
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+  }
+
+.modal-lesson {
+    display: none;
+    position: fixed;
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Стили для контента модального окна */
+
+
+/* Стили для iframe с видео */
+#videoFrame {
+    margin-top: 30px;
+}
+
+/* Стили для кнопки закрытия */
+.close-lesson {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-lesson:hover,
+.close-lesson:focus {
+  color: black;
 }
